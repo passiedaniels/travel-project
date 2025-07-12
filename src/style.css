@@ -93,7 +93,13 @@ footer {
     gap: 32px;
   }
   .card1-respond {
-    max-width: 100%;
+    width: 100%;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 25/9;
   }
 }
 section {
@@ -131,8 +137,8 @@ footer a {
   grid-template-columns: 1fr 2fr 2fr;
 }
 .small-image {
-  width: 600px;
-  height: auto;
+  width: 100%;
+  aspect-ratio: 1/1;
 }
 section {
   max-width: 1000px;
@@ -188,11 +194,8 @@ main p {
   max-width: 100%;
 }
 .card1-respond {
-  width: 250px;
-  height: auto;
-  display: block;
-  margin-left: 0;
-  margin-bottom: 20px;
+  width: 100%;
+  aspect-ratio: 1/1;
 }
 .grid-cards {
   grid-template-columns: 1fr 1fr 1fr;
@@ -239,4 +242,12 @@ main p {
 }
 .btn-footer {
   padding: 30px 20px 0;
+}
+
+.card-header.grid {
+  grid-gap: 0;
+}
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
 }
